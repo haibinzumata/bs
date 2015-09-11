@@ -21,6 +21,8 @@ $(document).ready(function() {
       e.preventDefault();
       $('#inputPasswordFormGroup').addClass('has-error');
       $('#inputRepeatPasswordFormGroup').addClass('has-error');
+      $('#placeForAlert').addClass('alert alert-warning');
+      $('#placeForAlert').html('Password and Repeat Password must be the same');
     } else {
       $('#signupForm').submit();
     }
