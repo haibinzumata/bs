@@ -22,7 +22,9 @@ $(document).ready(function() {
       $('#inputPasswordFormGroup').addClass('has-error');
       $('#inputRepeatPasswordFormGroup').addClass('has-error');
       $('#placeForAlert').addClass('alert alert-warning');
-      $('#placeForAlert').html('Password and Repeat Password must be the same');
+      var icon = "<span class='glyphicon glyphicon-remove'></span>";
+      var str = "<button type='button' class='close' data-dismiss='alert'>" + icon + "</button>";
+      $('#placeForAlert').html(str + ' Password and Repeat Password must be the same');
     } else {
       $('#signupForm').submit();
     }
